@@ -1,0 +1,26 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark align-items-center fixed-top">
+
+    <a class="navbar-brand " routerLink="/"><img id="imagenStar" [src]="imagenStar"><span class="sr-only"></span></a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#ejercicioRodil"
+        aria-controls="navbarSupportedContent" aria-controls="ejercicioRodil" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="ejercicioRodil">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown pt-3" routerLinkActive="router-link-active">
+                <a class="nav-link dropdown-toggle lera" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Peliculas
+                </a>
+                <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item text-warning" routerLink="peliculas">Todas</a>
+                    <a class="dropdown-item text-warning" routerLink="peliculas/formulario">Crear Pelicula</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+</nav>
