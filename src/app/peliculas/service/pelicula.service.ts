@@ -1,7 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { AuxiliarService } from 'src/app/service/auxiliar.service';
 import { environment } from 'src/environments/environment';
 import { Pelicula } from '../models/pelicula';
 import { PeliculaImpl } from '../models/pelicula-impl';
@@ -15,7 +14,7 @@ export class PeliculaService {
   private urlEndPoint: string = `${this.host}films`;
 
   constructor(private http: HttpClient,
-              private auxService: AuxiliarService) { }
+              ) { }
 
   getPeliculas(): Observable<any> {
     return this.http.get<any>(this.urlEndPoint);
@@ -43,8 +42,5 @@ export class PeliculaService {
     console.log(`Se ha creado la pelicula: ${JSON.stringify(pelicula)}`);
   }
 
-  getPeliculasPagina(pagina: number): Observable<any> {
-    return this.auxService.getItemsPorPagina(this.urlEndPoint, pagina);
-  }
 
 }

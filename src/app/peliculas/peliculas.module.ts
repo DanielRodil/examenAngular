@@ -5,7 +5,6 @@ import { PeliculasRoutingModule } from './peliculas-routing.module';
 import { PeliculasComponent } from './peliculas/peliculas.component';
 import { PeliculaItemComponent } from './pelicula-item/pelicula-item.component';
 import { FormsModule } from '@angular/forms';
-import { AuxiliarService } from '../service/auxiliar.service';
 import { PeliculaComponent } from './peliculas/pelicula/pelicula.component';
 
 
@@ -20,6 +19,6 @@ import { PeliculaComponent } from './peliculas/pelicula/pelicula.component';
     PeliculasRoutingModule,
     FormsModule,
   ],
-  providers: [AuxiliarService]
+  providers: []
 })
 export class PeliculasModule { }

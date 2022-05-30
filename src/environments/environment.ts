@@ -7,5 +7,4 @@ export const environment = {
   imagenCasco: '../assets/casco.jpg',
   imagenDarth: '../assets/darthVader.jpg',
   imagenStar: '../assets/startwars.png',
-  itemsPorPagina: 10
 };
